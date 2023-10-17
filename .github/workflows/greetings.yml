@@ -1,0 +1,26 @@
+name: Greetings
+
+on:
+  pull_request_target:
+  issues:
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Greet on Issue Creation
+        uses: actions/first-interaction@v1
+        with:
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          issue-message: |
+            Greetings! 👋 
+            Thank you for creating your first issue for GrabBits. 
+            We appreciate your contribution and will attend to it promptly. 
+            Should you have any questions or need further assistance, feel free to reach out. 
+            We look forward to collaborating with you!
+          pr-message: |
+            Congratulations! 🎉 
+            We would like to acknowledge and celebrate your first pull request for GrabBits. 
+            Our dedicated team will review it diligently. 
+            Should you have any queries or require guidance, do not hesitate to ask. 
+            Thank you for your valuable contribution.

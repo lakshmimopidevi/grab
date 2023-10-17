@@ -1,0 +1,149 @@
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.header {
+	background-color: hsl(210, 46%, 95%);
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	z-index: 100;
+}
+
+.nav {
+	padding: 0 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.brand {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo {
+	width: 60px;
+	margin: .4rem 0;
+}
+
+.brand__title {
+	font-size: 1.5rem;
+	font-weight: 750;
+}
+
+.nav__list {
+	display: flex;
+	gap: 2rem;
+}
+
+.nav__item {
+	font-size: 1rem;
+	font-weight: 550;
+	padding: 16px 8px;
+	cursor: pointer;
+}
+
+.nav__item:hover {
+	color: #7541c8;
+}
+
+#nav__icon {
+	display: none;
+}
+
+#nav__close {
+	display: none;
+}
+
+#nav__toggle__icon {
+	display: none;
+}
+
+@media screen and (max-width: 800px) {
+
+	.header {
+		position: fixed;
+		width: 100%;
+		bottom: 0;
+		padding: .5rem 0;
+	}
+
+	/* .brand__title {
+		display: none;
+	} */
+
+	.logo {
+		width: 50px;
+	}
+
+	.menu__open .nav__toggle__icon {
+		display: none;
+	}
+
+	.menu__open {
+		width: 100%;
+		border-radius: 1rem;
+	}
+
+	.menu__open .grid {
+		display: grid;
+		gap: 1.5rem;
+	}
+
+	.menu__open .nav__list {
+		grid-template-columns: repeat(3, 1fr);
+		gap: 2rem;
+		padding: 0;
+	}
+
+	.menu__open #nav__icon {
+		display: block;
+	}
+
+
+	.menu__open .nav__item {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		font-size: .7rem;
+		text-align: center;
+	}
+
+	.menu__open #nav__icon {
+		font-size: 1rem;
+	}
+
+	.menu__open #nav__close {
+		display: block;
+		position: absolute;
+		bottom: 1rem;
+		right: 2rem;
+		font-size: 2.5rem;
+	}
+
+	.menu__open #nav__close:hover {
+		cursor: pointer;
+		color: #7541c8;
+	}
+
+
+	.menu__close .nav__list {
+		display: none;
+	}
+
+	#nav__toggle__icon {
+		display: block;
+		font-size: 2rem;
+	}
+
+	#nav__toggle__icon:hover {
+		cursor: pointer;
+		color: #7541c8;
+	}
+}

@@ -1,0 +1,201 @@
+
+.main{
+    width: 100vw;
+    height: 100vh;
+}
+
+.mainContainer{
+    width: 100%;
+    height:100%;
+    background: linear-gradient(67.32deg, #A5D4FF 0%, #FFFFFF 50%, #E8B6FF 100%);   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subContainer{
+   width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    height: auto;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.headingSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainHeading{
+    font-size: 65px;
+    margin-bottom: 20px;
+}
+.subHeading{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+.mainForm{ 
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 24px 12px;
+  /* background: var(--clr-1); */
+  background: white;
+  position: relative;
+  border-radius: 4px;
+}
+
+.mainSection{
+  width: 100%;
+  padding: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+
+.inputAns,.btn,.inputField{
+    all: unset;
+}
+
+.inputField{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+    border-radius: 4px;
+    border: 1px solid rgb(99, 99, 99);
+    width: 90%;
+    padding: 12px 8px;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin-top: 4px;
+}
+
+.inputAns{
+    width: 100%;
+    height: 100%;
+    font-size: 18px;
+    padding: 0px 0px 0px 8px;
+}
+
+.btn {
+ align-items: center;
+ background-image: linear-gradient(144deg,#af40ff, #9c8cff 50%,#1d52ff);
+ border: 0;
+ border-radius: 8px;
+ box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+ box-sizing: border-box;
+ color: #FFFFFF;
+ display: flex;
+ /* font-family: Phantomsans, sans-serif; */
+ font-size: 18px;
+ justify-content: center;
+ line-height: 1em;
+ max-width: 100%;
+ min-width: 116px;
+ padding: 3px;
+ text-decoration: none;
+ user-select: none;
+ -webkit-user-select: none;
+ touch-action: manipulation;
+ white-space: nowrap;
+ cursor: pointer;
+ transition: all .3s;
+ margin-top: 4px;
+ margin-bottom: 8px;
+}
+
+.btn:active,
+.btn:hover {
+ outline: 0;
+}
+
+.btn span {
+ background-color: rgb(5, 6, 45);
+ padding: 12px 24px;
+ border-radius: 6px;
+ width: 100%;
+ height: 100%;
+ transition: 300ms;
+}
+
+.btn:hover span {
+ background: none;
+}
+
+.btn:active {
+ transform: scale(0.9);
+}
+
+.registerSection,.registerHeading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+}
+
+.registerLink{
+    color: #c74eff;
+    font-weight: 500;
+}
+
+@media screen and (max-width : 768px){
+    .mainHeading{
+        font-size: 10vw;
+        margin-bottom: 20px;
+    }
+    .subHeading{
+        font-size: 7vw;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width : 448px){
+
+  .subContainer{
+    margin: 12px;
+  }
+    .mainHeading{
+        font-size: 12vw;
+        margin-bottom: 20px;
+    }
+    .subHeading{
+        font-size: 7vw;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .mainForm{
+      /* margin: 8px; */
+      width: 80vw;
+      padding: 20px 12px;
+    }
+    .mainSection{
+        flex-direction: column;
+    }
+
+    .inputField{
+      padding: 10px 8px;
+    }
+    
+    .registerHeading{
+        flex-direction: column;
+        font-size: 17px;
+        gap: 4px;
+    }
+
+  
+}

@@ -1,0 +1,13 @@
+.heading {
+	text-align: center;
+	margin-top: 60px;
+	color: #fff;
+}
+.form {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 40px;
+	color: black;
+}

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+.cards {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	margin-top: 20px;
+	margin-bottom: 100px;
+	gap: 20px;
+}
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	overflow-x: hidden;
+}
+.no_job {
+	text-align: center;
+}
+.searchbar_bg {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-self: flex-end;
+	/* transform: translate(-50%,-50%); */
+	transition: all 1s;
+	width: 50px;
+	height: 50px;
+	background: white;
+	box-sizing: border-box;
+	border-radius: 25px;
+	border: 4px solid white;
+	padding: 4px;
+	margin-right: 8%;
+	margin-top: 20px;
+}
+.search_filter {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.search_bar {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 42.5px;
+	line-height: 30px;
+	outline: 0;
+	border: 0;
+	display: none;
+	font-size: 1em;
+	border-radius: 20px;
+	padding: 0 20px;
+}
+.text {
+	text-align: center;
+}
+.fa {
+	box-sizing: border-box;
+	padding: 10px;
+	width: 42.5px;
+	height: 42.5px;
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-radius: 50%;
+	color: #07051a;
+	text-align: center;
+	font-size: 1.2em;
+	transition: all 1s;
+}
+
+/* .searchbar_bg:hover {
+	width: 300px;
+	cursor: pointer;
+	transform: translateX(20%);
+	margin-right: 70px;
+} */
+
+/* here we are using ":focus-within" pseudo-class through which we can change styles when any of its descendants have focus */
+.searchbar_bg:hover,
+.searchbar_bg:focus-within {
+	width: 300px;
+	cursor: pointer;
+	transform: translateX(20%);
+	margin-right: 70px;
+}
+
+.searchbar_bg:hover input {
+	display: block;
+}
+
+.searchbar_bg:hover .fa {
+	background: #07051a;
+	color: white;
+}
+@media screen and (max-width: 768px) {
+	.search_filter {
+		gap: 20px;
+		justify-content: center;
+		flex-direction: column-reverse;
+	}
+}
+
+/* adding media query to handle dislocation of tags*/
+@media screen and (min-width: 800px) {
+	.base {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 30%;
+	}
+}

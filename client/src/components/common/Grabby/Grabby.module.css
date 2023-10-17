@@ -1,0 +1,76 @@
+.grabby {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* width: 100vw;
+	height: 100vh; */
+}
+.svg {
+	display: flex;
+	align-self: flex-end;
+}
+/* 
+@media screen and (max-width:800){
+	.svg{
+		top: 50px;
+		right: 170px;
+		rotate: 135deg;
+	}
+	
+} */
+/* 
+#rectangle rect {
+	animation: anim1 1s ease-in infinite forwards;
+}
+#trapezium path {
+	animation: anim1 1s ease-in infinite forwards;
+}
+#ellipse path {
+	animation: anim1 0.3s ease-in infinite forwards;
+}
+#triangle path {
+	animation: anim1 0.3s ease-in infinite forwards;
+}
+#line path {
+	animation: anim1 0.3s ease-in infinite forwards;
+}
+#lefteye g ellipse {
+	animation: anim1 1s ease-in infinite forwards;
+}
+#righteye g ellipse {
+	animation: anim1 1s ease-in infinite forwards;
+} */
+/* @keyframes anim1 {
+	0% {
+		fill: antiquewhite;
+	}
+	20% {
+		fill: #ff9100;
+	}
+	40% {
+		fill: #00c8ff;
+	}
+	60% {
+		fill: #402400;
+	}
+	80% {
+		fill: #ff0084;
+	}
+	100% {
+		fill: antiquewhite;
+	}
+} */
+#lefteye g ellipse {
+	animation: anim1 1s linear infinite;
+}
+#righteye g ellipse {
+	animation: anim1 1s linear infinite;
+}
+@keyframes anim1 {
+	to {
+		fill: #000;
+	}
+	from {
+		fill: #fff;
+	}
+}

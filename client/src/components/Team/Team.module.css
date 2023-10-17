@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=PT+Serif:wght@400;700&family=Poppins:wght@400;600&display=swap');
+
+.main {
+	width: 980px;
+	max-width: 70%;
+	margin: 100px auto;
+	display: flex;
+	gap: 5px;
+}
+
+.item {
+	flex-basis: 50%;
+}
+
+.right_section {
+	padding-left: 30px;
+	padding-right: 50px;
+}
+.team_members {
+	max-width: 70%;
+	width: 980px;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	gap: 50px;
+	margin-bottom: 100px;
+}
+
+.team {
+	flex-grow: 1;
+	/* display: flex;
+	justify-content: center;
+	align-items: center; */
+}
+.member_1 {
+	margin-bottom: 95px;
+}
+#img_1,
+#img_2,
+#img_3,
+#img_4,
+#img_5,
+#img_6 {
+	border-radius: 12px;
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+		rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+		rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+	transition: all 0.3s ease-in-out;
+}
+#img_1:hover,
+#img_2:hover,
+#img_3:hover,
+#img_4:hover,
+#img_5:hover,
+#img_6:hover {
+	transform: translateY(-10px);
+}
+#img_1 {
+	border-radius: 12px;
+	background: linear-gradient(to right, rgb(54, 209, 220), rgb(91, 134, 229));
+	background: linear-gradient(to right, rgb(253, 252, 71), rgb(36, 254, 65));
+}
+#img_1:hover {
+	background: linear-gradient(to left, rgb(253, 252, 71), rgb(36, 254, 65));
+}
+.member_2 {
+	margin-top: 95px;
+}
+#img_2 {
+	border-radius: 12px;
+	background-image: linear-gradient(
+		45deg,
+		rgb(3, 0, 30),
+		rgb(115, 3, 192),
+		rgb(236, 56, 188),
+		rgb(253, 239, 249)
+	);
+}
+#img_2:hover {
+	background-image: linear-gradient(
+		135deg,
+		rgb(3, 0, 30),
+		rgb(115, 3, 192),
+		rgb(236, 56, 188),
+		rgb(253, 239, 249)
+	);
+}
+.member_3 {
+	margin-bottom: 95px;
+}
+#img_3 {
+	border-radius: 12px;
+	background: linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
+}
+#img_3:hover {
+	background: linear-gradient(to left, rgb(86, 204, 242), rgb(47, 128, 237));
+}
+.member_4 {
+	margin-bottom: 95px;
+}
+#img_4 {
+	border-radius: 12px;
+	background: linear-gradient(to right, rgb(255, 0, 132), rgb(51, 0, 27));
+}
+#img_4:hover {
+	background: linear-gradient(to left, rgb(255, 0, 132), rgb(51, 0, 27));
+}
+.member_5 {
+	margin-top: 95px;
+}
+#img_5 {
+	border-radius: 12px;
+	background: linear-gradient(to right, #8693ab, #bdd4e7);
+}
+#img_5:hover {
+	background: linear-gradient(to left, #8693ab, #bdd4e7);
+}
+.member_6 {
+	margin-bottom: 95px;
+}
+#img_6 {
+	border-radius: 12px;
+	background: linear-gradient(to right, rgb(86, 204, 242), rgb(47, 128, 237));
+}
+#img_6:hover {
+	background: linear-gradient(to left, rgb(86, 204, 242), rgb(47, 128, 237));
+}
+.main_title {
+	font-family: 'PT Serif', serif;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 36px;
+	line-height: 48px;
+	letter-spacing: -0.045em;
+	margin-top: 12px;
+}
+
+.secondary_title {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	text-transform: uppercase;
+}
+
+.description {
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.img {
+	width: 250px;
+	max-width: 100%;
+}
+
+.name {
+	text-align: center;
+	font-family: 'Poppins', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.position {
+	font-family: 'PT Serif', serif;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	vertical-align: top;
+	writing-mode: vertical-rl;
+}
+
+/* @media screen and (min-width: 300px) and (max-width: 600px) {
+	.main {
+		margin-top: 80px;
+		margin-bottom: 50px;
+		max-width: 100%;
+		display: block;
+	}
+	.main_title {
+		padding-left: 4%;
+		margin-bottom: 40px;
+	}
+	.right_section {
+		padding-left: 4%;
+	}
+	.description {
+		font-size: 16px;
+	}
+	.img {
+		width: 40%;
+	}
+	.name {
+		font-size: 12px;
+		margin: 0;
+	}
+	.position {
+		font-size: 10px;
+	}
+	.team_members {
+		gap: unset;
+		max-width: 98%;
+		padding: 5%;
+	}
+	.team {
+		flex-basis: 50%;
+	}
+	.member_1 {
+		margin-bottom: 0px;
+		padding-right: 3%;
+	}
+	.member_2 {
+		margin-top: 55px;
+		padding-left: 3%;
+	}
+	.member_3 {
+		margin-bottom: 0px;
+		/* padding-right: 3%; */
+	/* } */
+	.member_4 {
+		margin-top: 55px;
+		margin-bottom: 0;
+		padding-left: 3%;
+	}
+	.member_5 {
+		margin-top: 0px;
+		padding-right: 3%;
+	}
+	.member_6 {
+		margin-top: 55px;
+		padding-left: 3%;
+	}
+/* } */ 
+
+/* 
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+	.main {
+		margin-top: 80px;
+		margin-bottom: 50px;
+		max-width: 90%;
+		display: block;
+	}
+	.main_title {
+		padding-left: 4%;
+		margin-bottom: 40px;
+	}
+	.right_section {
+		padding-left: 4%;
+		max-width: 90%;
+	}
+	.name {
+		font-size: 14px;
+		margin: 0;
+	}
+	.position {
+		font-size: 12px;
+	}
+	.img {
+		width: 70%;
+	}
+	.team_members {
+		gap: unset;
+		max-width: 98%;
+		padding: 7%;
+	}
+	.team {
+		flex-basis: 50%;
+	}
+	.member_1 {
+		margin-bottom: 0px;
+		padding-right: 4%;
+	}
+	.member_2 {
+		margin-top: 75px;
+		padding-left: 4%;
+	}
+	.member_3 {
+		margin-bottom: 0px;
+		padding-right: 4%;
+	}
+	.member_4 {
+		margin-top: 75px;
+		margin-bottom: 0;
+		padding-left: 4%;
+	}
+	.member_5 {
+		margin-top: 0px;
+		padding-right: 4%;
+	}
+	.member_6 {
+		margin-top: 75px;
+		padding-left: 4%;
+	}
+}
+*/
+
+@media screen and (max-width: 832px) {
+	.member_1,
+	.member_2,
+	.member_3,
+	.member_4,
+	.member_5,
+	.member_6 {
+		margin: 0px;
+	}
+	.team_members {
+		display:flex;
+		flex-direction:column;
+		justify-content:center;
+		gap: 0;
+		max-width: 90%;
+		width: 100vw;
+		/* margin: auto; */
+	}
+	.right_section {
+		padding: 0;
+	}
+}
+@media screen and (max-width: 600px) {
+	.img {
+		width: 200px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.img {
+		width: 150px;
+	}
+}
+
+@media screen and (min-width: 1026px) and (max-width: 1350px) {
+	.main {
+		margin-top: 80px;
+		margin-bottom: 50px;
+		max-width: 80%;
+	}
+	.main_title {
+		padding-left: 4%;
+		margin-bottom: 40px;
+	}
+	.right_section {
+		padding-left: 4%;
+	}
+	.name {
+		text-align: center;
+		font-size: 14px;
+		margin: 0;
+	}
+	.position {
+		font-size: 12px;
+	}
+	.img {
+		width: 80%;
+	}
+	.team_members {
+		gap: unset;
+		max-width: 98%;
+		padding: 3%;
+	}
+	.team {
+		flex-basis: 33.333%;
+	}
+}

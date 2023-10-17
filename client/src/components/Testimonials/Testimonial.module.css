@@ -1,0 +1,53 @@
+.testi_bg {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgb(255, 255, 255);
+	width: 70vw;
+	height: auto;
+	margin: auto;
+	padding: 30px;
+	row-gap: 50px;
+	border-radius: 50px;
+}
+.testi_wrapper {
+	display: flex;
+	width: 75%;
+	justify-content: center;
+	align-items: center;
+	column-gap: 70px;
+}
+.testi_content {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	row-gap: 20px;
+}
+.testi_img {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 5px solid red;
+}
+.testi_heading {
+	font-size: 26px;
+}
+.testi_name {
+	font-size: 17px;
+}
+.testi_para {
+	font-size: 15px;
+}
+.arrows {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	column-gap: 40px;
+}
+.arrows img {
+	width: 50px;
+	height: 20px;
+	cursor: pointer;
+}

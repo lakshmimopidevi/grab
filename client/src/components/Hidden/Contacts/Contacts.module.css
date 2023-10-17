@@ -1,0 +1,20 @@
+.heading {
+	text-align: center;
+	color: #fff;
+}
+.contacts {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+.contact {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-color: aqua;
+	border-radius: 12px;
+	padding: 20px;
+	margin: 20px;
+}

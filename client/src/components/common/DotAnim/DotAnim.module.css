@@ -1,0 +1,29 @@
+.dot {
+	width: 15px;
+	height: 15px;
+	background-color: #4285f4;
+	border-radius: 50%;
+	box-shadow: 0 0 20px #4285f4;
+	animation: ripple 1s ease-in-out infinite;
+	transition: all 0.3s ease-in-out;
+}
+@keyframes ripple {
+	0% {
+		box-shadow: 0 0 20px 10px #4285f4;
+	}
+	20% {
+		box-shadow: 0 0 60px 10px #4285f4;
+	}
+	40% {
+		box-shadow: 0 0 100px 10px #4285f4;
+	}
+	60% {
+		box-shadow: 0 0 60px 10px #4285f4;
+	}
+	80% {
+		box-shadow: 0 0 20px 10px #4285f4;
+	}
+	100% {
+		box-shadow: 0 0 0px #4285f4;
+	}
+}
